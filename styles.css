@@ -1,0 +1,427 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fallback background color */
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  header {
+    background-color: #66000000;
+    opacity: 0.4;
+    padding: 30px;
+  }
+  
+.homepage-background {
+    background-image: url("https://wallpapercave.com/wp/wp6065677.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navigation links horizontally */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Blue color for navigation links */
+    font-weight: bold;
+    transition: color 0.4s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #f20000; /* Hover color */
+}
+
+main {
+    padding: 20px;
+    position: relative;
+}
+
+/* Fullscreen static background for server.html */
+body.server-page {
+    background-image: url('https://wallpapercave.com/wp/wc1736696.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+/* Style for navigation menu links */
+body.server-page nav a {
+    color: #ffffff;
+    font-family: Arial,sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    transition: color 0.1s ease;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+body.server-page nav a:hover {
+    color: #f20000;
+}
+
+/* Style for buttons */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for animated text on homepage */
+.homepage-text {
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    font-size: 24px;
+    animation: slideUp 2s ease-in-out infinite;
+}
+
+@keyframes slideUp {
+    0%, 100% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Simple console page */
+.console-page {
+    background-color: rgb(8, 24, 117);
+}
+
+.console-container {
+    
+    position: relative; /* Added to position the input container */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
+}
+.server-title {
+    color: white;
+}
+
+
+.registry-log {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.registry-entry {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.Comicfont{
+
+    color: rgb(201, 201, 201);
+    
+    font-family: Comic Sans MS;
+    
+    
+    }
+    /* Style for the logo */
+.logo img {
+    max-width: 50px; /* Adjust the size of the logo */
+    height: auto;
+    margin-top: 0.1px;
+    padding-top: 0.1px;
+    position: left;
+   
+    
+}
+/* Access page styles */
+.access-form {
+    background-color: rgb(0, 145, 150);
+    padding: 50px;
+    padding-top: 0.6px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.access-form nav {
+    margin-top: 200px; /* Add some space from the top for the navigation menu */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: justify;
+}
+
+.access-form ul li {
+    margin-right: 100px;
+}
+
+.access-form ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.1s ease;
+}
+
+.access-form ul li a:hover {
+    color: #f20000;
+}
+
+.access-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.access-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 0.2 px;
+}
+
+.access-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.access-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles */
+.Comicfont {
+    color: rgb(238, 214, 0);
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.backup-page {
+    background-image: url('https://www.liquidweb.com/static/62da40c600378476b948867e485a7af5/best-practice-for-data-backup.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width:auto ;
+    
+}
+.registry-background{
+    background-image: url('https://img.freepik.com/free-vector/blue-shiny-wave-swirl-background-attractive-design_1017-25488.jpg');
+    background-size: cover;
+    background-position: stretch;
+}
+.access-background{
+    background-image: url('https://img.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg?w=740&t=st=1693494253~exp=1693494853~hmac=2a678ef85839c3c880d6734832438731e97e1e1d5cc957cee894cae7d2468db1');
+    background-size: cover;
+    background-position: center;
+}
+/* Add a class for contact information */
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    animation: bounceIn  ease infinite; /* Removed "forwards" */
+}
+
+.contact-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-box p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Bouncy animation */
+@keyframes bounceIn {
+    0%, 100% {
+        opacity: 1; /* Changed opacity to 1 */
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+};
+body.files-page nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.1s ease;
+}
+body.files-page nav a:hover {
+    color: #f20000;
+}
+
+/* Reset some default styles */
+.reset-styles {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the page */
+.page {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.page-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}
+
+.page-main {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.world {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.world img {
+    max-width: 5%;
+    height: 10%;
+    position: left;
+}
+
+/* Footer styling */
+.page-footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 200px 0;
+}
+/* Footer styling */
+.page-footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 180px 30;
+}
+
+.page-footer a {
+    color: #fff; /* Set the color of the link text to white */
+    text-decoration: none; /* Remove underline on the link */
+}
+
+.page-footer a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.software-page{
+    background-image: url('https://www.softwarepursuits.com/content/uploads/suresync-suite-background.jpg');
+    background-size: cover;
+    background-position: justify;
+}
+.software-text{
+font-family: Arial,sans-serif;  
+font-size: 18px;
+color: white;
+display: block;
+padding: 30px;
+margin-top:30px;
+text-shadow: 5px 4px 4px white;
+
+
+
+}
+.plugins{
+font-family: Arial,sans-serif;   
+font-size: 18px;
+color: white;
+display: block;
+padding: 30px;
+margin-top: 30px;
+text-shadow: 5px 4px 4px white;
+}

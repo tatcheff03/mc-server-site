@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Minecraft Server Control Panel - Backups</title>
+</head>
+<style>
+    /* Add CSS to make the font color white for backup options */
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+p {
+color:cyan;
+text-decoration: dashed;
+font-size: 22px;
+margin-top: 50px;
+
+}
+    ul li a {
+        color: white; /* Set the font color to white */
+        text-decoration: none; /* Remove underline from links */
+        font-size: 20px;
+        
+    }
+</style>
+<body class="backup-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="server.html">Server</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="software.html">Software & Plugins</a></li>
+                <li><a href="files.html">Files</a></li>
+                <li><a href="worlds.html">Worlds</a></li>
+                <li><a href="backups.html">Reserved Copies</a></li>
+                <li><a href="access.html">Access</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="server-title">World backups</h1>
+        <p>Choose a backup option:</p>
+        <ul>
+            <li><a href="https://drive.google.com/drive/u/0/my-drive" target="_blank">Backup to Google Drive</a></li>
+            <li><a href="#" id="localBackupButton">Create Local Backup</a></li>
+        </ul>
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle local backup
+        document.getElementById("localBackupButton").addEventListener("click", function() {
+            // Implement your local backup logic here
+            alert("Local backup initiated. Make sure you have a local backup system in place.");
+        });
+    </script>
+</body>
+</html>

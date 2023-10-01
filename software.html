@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Software and Plugins</title>
+</head>
+<body class="software-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="server.html">Server</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="registry.html">Registry</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="software.html">Software & Plugins</a></li>
+                <li><a href="files.html">Files</a></li>
+                <li><a href="worlds.html">Worlds</a></li>
+                <li><a href="backups.html">Reserved Copies</a></li>
+                <li><a href="access.html">Access</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="software-text">
+            <h2>Server Software</h2>
+            <br>
+            <p>Select a file to upload:</p>
+        <input type="file" id="fileInput" accept=".zip, .rar, .tar.gz"></div>
+            <script src="script.js"></script>
+            <script>
+            document.getElementById("uploadButton").addEventListener("click", function() {
+                const fileInput = document.getElementById("fileInput");
+                const file = fileInput.files[0];
+    
+                if (file) {
+                    
+                    alert(`File "${file.name}" uploaded.`);
+                } else {
+                    alert("Please select a file to upload.");
+                }
+            });
+            
+            </script>
+        
+        <div class="plugins">
+            <h2>Plugins</h2>
+            <br>
+            <p>Select a file to upload:</p>
+        <input type="file" id="fileInput" accept=".zip, .rar, .tar.gz">
+            <script>
+                document.getElementById("uploadButton").addEventListener("click", function() {
+                    const fileInput = document.getElementById("fileInput");
+                    const file = fileInput.files[0];
+        
+                    if (file) {
+                        // You can implement your local backup logic here.
+                        alert(`File "${file.name}" uploaded.`);
+                    } else {
+                        alert("Please select a file to upload.");
+                    }
+                });
+                </script>
+        </div>
+    </main>
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+</body>
+</html>

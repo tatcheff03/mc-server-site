@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Minecraft Server Control Panel - Files</title>
+    <style>
+        /* Additional CSS specific to the players page */
+        body {
+            margin: 0;
+            background: url("https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-technology-cloud-upload-image_782019.jpg") no-repeat ;
+            background-size: cover;
+        }
+        .files-page {
+            text-align: left; /* Align text to the left */
+            padding: 5px;
+            color: white;
+            position: relative; /* Add position: relative */
+        }
+        </style>
+</head>
+
+ <body class="files-page">
+    
+    <header>
+       
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="server.html">Server</a></li>
+            <li><a href="console.html">Console</a></li>
+            <li><a href="registry.html">Registry</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="software.html">Software & Plugins</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a href="worlds.html">Worlds</a></li>
+            <li><a href="backups.html">Reserved Copies</a></li>
+            <li><a href="access.html">Access</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <h1 class="page-title">File Upload</h1>
+        <p>Select a file to upload:</p>
+        <input type="file" id="fileInput" accept=".zip, .rar, .tar.gz">
+        <button id="uploadButton">Upload</button>
+    </main>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle file upload
+        document.getElementById("uploadButton").addEventListener("click", function() {
+            const fileInput = document.getElementById("fileInput");
+            const file = fileInput.files[0];
+
+            if (file) {
+                // You can implement your local backup logic here.
+                alert(`File "${file.name}" uploaded. Implement local backup logic.`);
+            } else {
+                alert("Please select a file to upload.");
+            }
+        });
+    </script>
+</body>
+</html>
